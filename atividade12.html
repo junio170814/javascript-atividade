@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade12</title>
+</head>
+<body>
+ <p>esse e o seu saldo</p>
+ <p id="demo"></p>
+ 
+ <script>
+    var saldo1 = prompt("digite seu saldo");
+    var debito1 = prompt("digite seu debito");
+    var credito1 = prompt("digite seu credito");
+    
+    var saldo = parseInt(saldo1);
+    var debito = parseInt(debito1);
+    var credito = parseInt(credito1);
+
+    var saldoAtual = saldo - debito + credito;
+
+    if (saldoAtual > 0) {
+        document.getElementById("demo").innerHTML = "parabens seu saldo e positivo" + "<br>" + saldoAtual;
+    }else {
+        document.getElementById("demo").innerHTML = "infelizmente seu saldo e negativo" + "<br>" + saldoAtual;
+    }
+ </script>
+</body>
+</html>

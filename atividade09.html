@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade09</title>
+</head>
+<body>
+ <p>esse e o seu salario</p>
+ <p id="demo"></p>
+ 
+ <script>
+    var horasT = prompt("digite a hora trabalhada");
+    var valorH = prompt("digite o valor da hora trabalhada");
+
+    if (horasT > 40) {
+        var horasEx = valorH - 40;
+        var valorHe = (horasEx * valorH) / 2;
+        var salarioFinal = (40 * valorH ) + valorHe
+
+        document.getElementById("demo").innerHTML = salarioFinal
+    }else {
+        var salarioFinal = horasT * valorH;
+        document.getElementById("demo").innerHTML = salarioFinal
+    }
+ </script>
+</body>
+</html>

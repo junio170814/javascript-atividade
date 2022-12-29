@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade11</title>
+
+</head>
+<body>
+<p>esse e o seu salario</p>
+<p id="demo"></p>
+
+<script>
+    var salarioFixo = prompt("digite o salario");
+    var vendas = prompt("digite o valor das vendas");
+    var salarioFixo1 = parseInt(salarioFixo)
+    if (vendas > 1500) {
+        var vendas1 = 1500 * 0.03;
+        var vendas2 = (vendas - 1500) * 0.05;
+        var total = vendas1 + vendas2;
+        var salario = total + salarioFixo1;
+        document.getElementById("demo").innerHTML = salario;
+    }else {
+        comissao = vendas * 0.03;
+        salario = salarioFixo1 + comissao;
+        document.getElementById("demo").innerHTML = salario;
+    }
+</script>
+</body>
+</html>

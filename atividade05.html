@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 05</title>
+</head>
+<body>
+<p>sera que esse ano vc poderá votar, vamos ver</p>
+<p id="demo"></p>
+
+<script>
+    var anoAtual = prompt("qual ano atual");
+    var anoNasci = prompt("qual seu ano de nascimento");
+    var resultado = anoAtual - anoNasci;
+
+    if (resultado > 16) {
+        document.getElementById("demo").innerHTML = "parabens voce pode votar esse ano";
+    } else {
+        document.getElementById("demo").innerHTML = "infelizmente vc não pode votar esse ano";
+    }
+</script>
+    
+</body>
+</html>
